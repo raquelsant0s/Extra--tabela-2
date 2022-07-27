@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> GESTÃO ACADÊMICA </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+            <br><br><br><br>
+        <form action="#" method="post" name="gestao">
+            <table align="center" border="0" cellpadding="5" width="500">
+                <tr bgcolor="#B8860B">
+                    <td colspan="2"><strong> SISTEMA DE GESTÃO ACADÊMICA </strong></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><strong> MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO </strong></td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Login </strong></label></td>
+                    <td><input type="text" id="login" name="login" size="30" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Senha </strong></label></td>
+                    <td><input type="password" id="senha" name="senha" size="30" required></td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Status </strong></label></td>
+                    <td>
+                        <select name="status" id="status" required>
+                            <option value="" selected="selected"> -- Selecione -- </option>
+                            <option value="ativo"> Ativo </option>
+                            <option value="inativo"> Inativo </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Tipo </strong></label></td>
+                    <td>
+                        <label><input type="radio" id="tipo" name="tipo" value="Tec" required><strong> Técnico </strong></label>
+                        <label><input type="radio" id="tipo" name="tipo" value="Prof" required><strong> Professor </strong></label>
+                        <label><input type="radio" id="tipo" name="tipo" value="Alu" required><strong> Aluno </strong></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Data Criação </strong></label></td>
+                    <td><input type="date" name="data" id="data" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Perfil </strong></label></td>
+                    <td>
+                        <label><input type="radio" id="perfil" name="perfil" value="c" required><strong> Convidado </strong></label>
+                        <label><input type="radio" id="perfil" name="perfil" value="a" required><strong> Administrador </strong></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label><strong> Observações </strong></label></td>
+                    <td><textarea name="obs" id="obs" cols="48" rows="5"/></textarea></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><label><strong> Módulos </strong></label></td>
+                    <td>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Compras </strong></label>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Biblioteca </strong></label>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Acadêmico </strong></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Documentação </strong></label>
+                        <label><input type="checkbox" name="modulos" id="modulos"/><strong> Recursos Humanos </strong></label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <button type="submit"><strong> Cadastrar </strong></button>
+                        <button type="reset"><strong> Excluir </strong></button>
+                    </td>
+
+                </tr>
+
+            </table>
+        </form>
+
+    </body>
+    
+</html>
